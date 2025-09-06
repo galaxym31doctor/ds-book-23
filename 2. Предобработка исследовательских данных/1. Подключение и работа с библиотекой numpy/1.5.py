@@ -26,3 +26,14 @@ print('Обратная матрица c: ', c, '\n')
 print('Определитель матрицы a: ', np.linalg.det(a))
 print('Определитель матрицы b: ', np.linalg.det(b))
 print('Определитель матрицы c: ', np.linalg.det(c), '\n')
+
+for i in range (0, 3):
+    a1 = np.linalg.norm(b[i][0:2])
+    print("Норма веркторов 2-й матрицы", i + 1, "-я строка: ", a1)
+
+print("\n")
+
+for i in range (0, 4):
+    c1 = np.linalg.norm(c[i][0:3])
+    print("Норма веркторов 3-й матрицы", i + 1, "-я строка: ", c1)
+
